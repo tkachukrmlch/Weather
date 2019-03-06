@@ -194,8 +194,8 @@ body{
     margin-right: 89px;
 }
 
-.icons {
-    padding-right: 15px;
+.icons li{
+    display: inline-block;
 }
 
 .icons a {
@@ -211,8 +211,11 @@ body{
     width: 100%;
     padding-top: 288px;
 }
-.masthead-in-left a:hover,.masthead-in-left a:last-child:hover{
-    background: rgba(68, 102, 201, .5)
+.masthead-in-left a:last-child:hover{
+    background: rgba(68, 102, 201, .8)
+}
+.masthead-in-left a:hover{
+    background: rgba(252, 106, 66, .9)
 }
 .masthead-in-left{
     float: left;
