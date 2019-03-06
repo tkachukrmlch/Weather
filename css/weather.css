@@ -52,6 +52,10 @@ body{
 a{
     text-decoration: none;
 }
+body{
+    min-width: 1170px;
+    background-size: cover;
+}
 .wraper{
     width: 1170px;
     margin: 0 auto;
@@ -244,14 +248,61 @@ a{
     line-height: 30px;
     font-size: 18px;
 }
+.masthead-in-right {
+    display: flex;
+}
+
 .masthead-in-right img{
     position: relative;
     right: 194px;
     bottom: 84px;
+}
+.circle{
+    position: relative;
+    border-radius: 100px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.sunny{font-size: 18px;
+    right: 29px;
+    height: 90px;
+    width: 90px;
+    background: #fc6a42;
+    top: 210px;
+}
+.london{
+    font-size: 16px;
+    top: 184px;
+    left: 342px;
+    background: #4466c9;
+    height: 90px;
+    width: 90px
+}
+.nine {
+    font-size: 21px;
+    background: white;
+    height: 58px;
+    width: 58px;
+    color: #6ca3ff;
+    left: 171px;
+    padding-left: 8px;
+}
+.rio {
+    left: 248px;
+    color: #648cff;
+    background: #fcec64;
+    height: 56px;
+    width: 56px;
+    top: 491px;
 }
 
 
 
 
 
-/**!content**/
+/**!content**
