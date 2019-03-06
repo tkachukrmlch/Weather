@@ -1,3 +1,46 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 *{
     padding: 0;
     margin: 0;
@@ -6,8 +49,27 @@
 body{
     min-width: 1170px;
 }
+a{
+    text-decoration: none;
+}
 .wraper{
     width: 1170px;
+    margin: 0 auto;
+}
+.strong{
+    font-family: "Ubuntu Bold";
+    font-weight: normal;
+    font-style: normal;
+}
+.light{
+    font-family: "Ubuntu Light";
+    font-weight: normal;
+    font-style: normal;
+}
+.regular{
+    font-family: "Ubuntu Regular";
+    font-weight: normal;
+    font-style: normal;
 }
 /**fonts**/
 @font-face {
@@ -78,5 +140,118 @@ body{
 .icon-appleinc:before {
     content: "\eabe";
 }
-
 /**!fonts**/
+
+/**header**/
+.header {
+    position: absolute;
+    padding-left: 15px;
+    left: calc(50% - 585px);
+}
+.hat div {
+    line-height: 90px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.head {
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+}
+
+.menu a {
+    color: #e1e1e1;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.white a {
+    color: white;
+}
+
+.menu i:nth-child(1) {
+    margin-left: 43px;
+    margin-right: 80px;
+}
+
+.menu i:nth-child(2) {
+    margin-right: 20px;
+}
+
+.menu i:nth-child(3) {
+    margin-left: 85px;
+    margin-right: 89px;
+}
+
+.icons {
+    padding-right: 15px;
+}
+
+.icons a {
+    color: white;
+    font-size: 27px;
+    margin-left: 33px;
+}
+/**!header**/
+/**content**/
+.masthead{
+    background: url(../images/back-top.jpg) 50% 100% no-repeat;
+    height: 959px;
+    width: 100%;
+    padding-top: 288px;
+}
+.masthead-in-left a:hover,.masthead-in-left a:last-child:hover{
+    background: rgba(68, 102, 201, .5)
+}
+.masthead-in-left{
+    float: left;
+}
+.masthead-in-right{
+    float: right;
+    display: flex;
+}
+.button {
+    background: #fc6a42;
+    padding: 0px 35px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+}
+.masthead-in-left a:last-child{
+    margin-left: 13px;
+    padding: 0 40px;
+    background: #4466c9;
+}
+.mil-h1{
+    line-height: 72px;
+    font-size: 60px;
+    color: white;
+    padding-bottom: 31px;
+}
+.mil-p{
+    padding-bottom: 55px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 18px;
+}
+.masthead-in-right img{
+    position: relative;
+    right: 194px;
+    bottom: 84px;
+}
+
+
+
+
+
+/**!content**/
