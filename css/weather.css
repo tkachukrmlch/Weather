@@ -58,10 +58,19 @@ body{
     width: 1170px;
     margin: 0 auto;
 }
+.center{
+    text-align: center;
+}
 .strong{
     font-family: "Ubuntu Bold";
     font-weight: normal;
     font-style: normal;
+}
+.stronger{
+    font-family: "Ubuntu Bold";
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
 }
 .light{
     font-family: "Ubuntu Light";
@@ -78,6 +87,8 @@ body{
     font-weight: normal;
     font-style: normal;
     font-size: 18px;
+    text-align: center;
+    color: #999;
 }
 /**fonts**/
 @font-face {
@@ -347,14 +358,9 @@ body{
     padding-top: 128px;
     padding-bottom: 25px;
     text-align: center;
-    color: #648cff;
-    text-transform: uppercase;
-    font-size: 36px;
-
 }
 .features-p{
-    text-align: center;
-    color: #999;
+
     padding-bottom: 130px;
 
 }
@@ -383,6 +389,38 @@ body{
     display: flex;
     flex-direction: row;
 }
-    /*!features*/
+/*!features*/
+.widgets{
+    height: 965px;
+}
+.title{
+    color: #648cff;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.widgets h3{
+    padding-bottom: 19px;
+    padding-top: 96px;
+    text-align: center;
+}
+.widgets p{
+    padding-bottom: 64px;
+}
+.widgets img{
+    position: relative;
+    left: 193px;
+}
+.vertical {
+    top: 457px;
+    position: relative;
+    display: inline-block;
+    transform: rotate(90deg);
+    font-size: 257px;
+    text-transform: capitalize;
+    color: rgba(0,0,0,.05);
+    left: 42px;
+    letter-spacing: -15px;
+}
+
 
 /**!content**/
