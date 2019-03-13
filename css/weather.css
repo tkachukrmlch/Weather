@@ -46,9 +46,7 @@ table {
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    min-width: 1170px;
-}
+
 a{
     text-decoration: none;
 }
@@ -57,8 +55,7 @@ body{
     background-size: cover;
 }
 .wraper{
-    padding: 0 15px;
-    width: 1200px;
+    width: 1170px;
     margin: 0 auto;
 }
 .strong{
@@ -75,6 +72,12 @@ body{
     font-family: "Ubuntu Regular";
     font-weight: normal;
     font-style: normal;
+}
+.regular-fz-18{
+    font-family: "Ubuntu Regular";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
 }
 /**fonts**/
 @font-face {
@@ -149,10 +152,11 @@ body{
 
 /**header**/
 .header {
+    z-index: 1;
     position: absolute;
     left: calc(50% - 600px);
 }
-.hat div {
+.hat{
     line-height: 90px;
     justify-content: space-between;
     display: flex;
@@ -205,22 +209,27 @@ body{
 }
 /**!header**/
 /**content**/
-.masthead{
+    /*!musthed*/
+.musthead{
     background: url(../images/back-top.jpg) 50% 100% no-repeat;
     height: 959px;
+    top: 0;
+    background-size: cover;
     width: 100%;
     padding-top: 288px;
+    position: relative;
+
 }
-.masthead-in-left a:last-child:hover{
+.musthead-in-left a:last-child:hover{
     background: rgba(68, 102, 201, .8)
 }
-.masthead-in-left a:hover{
+.musthead-in-left a:hover{
     background: rgba(252, 106, 66, .9)
 }
-.masthead-in-left{
+.musthead-in-left{
     float: left;
 }
-.masthead-in-right{
+.musthead-in-right{
     float: right;
     display: flex;
 }
@@ -236,7 +245,7 @@ body{
     display: inline-block;
     color: white;
 }
-.masthead-in-left a:last-child{
+.musthead-in-left a:last-child{
     margin-left: 13px;
     padding: 0 40px;
     background: #4466c9;
@@ -253,11 +262,11 @@ body{
     line-height: 30px;
     font-size: 18px;
 }
-.masthead-in-right {
+.musthead-in-right {
     display: flex;
 }
 
-.masthead-in-right img{
+.musthead-in-right img{
     position: relative;
     right: 194px;
     bottom: 84px;
@@ -305,9 +314,75 @@ body{
     width: 56px;
     top: 491px;
 }
+.scroll span {
+    position: absolute;
+    top: 845px;
+    left: calc(50% - 26px);
+    width: 49px;
+    height: 49px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+    background: white;
+}
+.scroll span::after {
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid #ff4a4f;
+    border-bottom: 1px solid #ff4a4f;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+    /*!musthed*/
+    /*features*/
+.features{
+    height: 556px;
+}
+.features-ttl{
+    padding-top: 128px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: #648cff;
+    text-transform: uppercase;
+    font-size: 36px;
 
+}
+.features-p{
+    text-align: center;
+    color: #999;
+    padding-bottom: 130px;
 
+}
+.character{
+    display: flex;
+    justify-content: space-between;
+}
+.character p {
+    color: #aeaeae;
+    padding-top: 18px;
+    font-size: 16px;
+    line-height: 31px;
+}
+.character h3{
+    color: #353854;
+    line-height: 20px;
+    font-size: 24px;
+}
+.character img{
+    padding-right: 20px;
+}
+.pbox{
+    width:  367px;
+}
+.parallax, .usability,.colors {
+    display: flex;
+    flex-direction: row;
+}
+    /*!features*/
 
-
-
-/**!content**
+/**!content**/
