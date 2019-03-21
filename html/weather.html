@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather</title>
-    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.waterwheelCarousel.js"></script>
     <script src="../js/weather.js"></script>
     <link rel="stylesheet" href="../css/weather.css">
 </head>
@@ -43,8 +47,8 @@
             <i class="rio  circle">rio</i>
             <i class="nine circle">9˚</i>
             <img src="../images/phone.png">
-        </div>
-            <i id="scroll1" class="scroll" href="#"><span></span></i>
+        </div >
+            <a  class="scroll" href="#bottom" id="top"><span></span></a>
         </div>
     </div>
 
@@ -53,17 +57,17 @@
             <h3 class="features-ttl title strong">Perfect Features</h3>
             <p class="regular-fz-18 features-p">Only necessary</p>
             <div class="character">
-                <div class="usability pbox">
+                <div class="usability ">
                     <div><img src="../images/usability.png"></div>
                     <div><h3 class=" strong">Usability</h3>
                     <p class="regular">Sometimes the simplest things are<br> the hardest to find. So we created a<br> new line for everyday life</p>
                 </div></div>
-                <div class="parallax pbox">
+                <div class="parallax ">
                     <div><img src="../images/parallax.png"></div>
                     <div><h3 class=" strong">Parallax Effect</h3>
                     <p class="regular">Sometimes the simplest things are<br> the hardest to find. So we created a<br> new line for everyday life</p>
                     </div></div>
-                <div class="colors pbox">
+                <div class="colors ">
                     <div><img src="../images/colors.png"></div>
                     <div><h3 class=" strong">Unlimites Colors</h3>
                     <p class="regular">Sometimes the simplest things are<br> the hardest to find. So we created a<br> new line for everyday life</p>
@@ -74,11 +78,22 @@
         </div>
 
     </div>
-    <div class="widgets">
+    <div class="widgets" id="bottom" >
         <div class="wraper">
             <h3 class="strong title">Simple widgets</h3>
             <p class="regular-fz-18">Drag and Drop</p>
-            <img src="../images/scrol-row.png">
+            <div class="carousel-wrap">
+                <a id="prev"><span class="icon-ctrl carousel-btn"></span></a>
+                <div id="carousel">
+                    <img src="../images/wdgl.jpg">
+                    <img src="../images/wdg.jpg" >
+                    <img src="../images/wdgr.jpg">
+                    <img src="../images/wdgl.jpg">
+                    <img src="../images/wdg.jpg" >
+                    <img src="../images/wdgr.jpg">
+                </div>
+                    <a id="next"><span class="icon-ctrl carousel-btn"></span></a>
+            </div>
         </div>
     </div>
     <div class="screenshots">
@@ -87,14 +102,46 @@
         <p class="regular-fz-18">The brightest images</p>
 
         <div class="clouds">
-<i class="vertical light">cloudy</i>
+            <div class="left">
+                <i class="back vertical light">cloudy</i>
+                <img class="screen-phone-left" src="../images/cloudly.png.png">
+                <i class="circle-screen crcl-scrn-l cld-crc-l strong">15˚</i>
+                <i class="circle-screen crcl-scrn-r cld-crc-r strong">Cloudy</i>
+            </div>
+           <div class="right">
+                <img class="screnn-img" src="../images/iconsforscreencloud.jpg">
+                <h3 class="strong title">When the clouds</h3>
+                <p class="regular screen-p">Variable information on the air humidity, the feeling of the weather, and the ability to share this with your friends</p>
+           </div>
         </div>
-
-
-
+        <div class="sun">
+            <div class="left">
+                <img class="screnn-img" src="../images/iconsforscreensun.jpg">
+                <h3 class="strong title">When the sun</h3>
+                <p class="regular screen-p">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life. Sometimes the simplest </p>
+            </div>
+           <div class="right">
+               <i class="back vertical light">sunny</i>
+               <img class="screen-phone-left" src="../images/sunny.png.png">
+               <i class="circle-screen crcl-scrn-l cld-crc-l strong">35˚</i>
+               <i class="circle-screen crcl-scrn-r cld-crc-r strong">Sunny</i>
+           </div>
         </div>
-    </div>
-
+        <div class="rain">
+            <div class="left">
+                <i class="back vertical light">rainy</i>
+                <img class="screen-phone-left" src="../images/rainy.png.png">
+                <i class="circle-screen crcl-scrn-l cld-crc-l strong">9˚</i>
+                <i class="circle-screen crcl-scrn-r cld-crc-r strong">Rainy</i>
+            </div>
+           <div class="right">
+                <img class="screnn-img" src="../images/iconsforscreenrain.jpg">
+                <h3 class="strong title">When the rain</h3>
+                <p class="regular screen-p">Sometimes the simplest things are the hardest to find. So we created a new line for everyday life. Sometimes the simplest </p>
+           </div>
+        </div>
+        </div>
+        </div>
 
 
 
@@ -107,9 +154,10 @@
 
 
 </div>
+
+</div>
 <footer class="footer">
     <div class="wraper">
-
     </div>
 </footer>
 </body>

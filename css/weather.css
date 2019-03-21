@@ -23,7 +23,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-body {
+body {background-size: cover;
     line-height: 1;
 }
 ol, ul {
@@ -128,6 +128,17 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../icomoon/fonts/icomoon.eot?f77s5i');
+    src:  url('../icomoon/fonts/icomoon.eot?f77s5i#iefix') format('embedded-opentype'),
+    url('../icomoon/fonts/icomoon.ttf?f77s5i') format('truetype'),
+    url('../icomoon/fonts/icomoon.woff?f77s5i') format('woff'),
+    url('../icomoon/fonts/icomoon.svg?f77s5i#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
@@ -158,6 +169,9 @@ body{
 }
 .icon-appleinc:before {
     content: "\eabe";
+}
+.icon-ctrl:before {
+    content: "\ea50";
 }
 /**!fonts**/
 
@@ -223,7 +237,7 @@ body{
     /*!musthed*/
 .musthead{
     background: url(../images/back-top.jpg) 50% 100% no-repeat;
-    height: 959px;
+    height: 100vh;
     top: 0;
     background-size: cover;
     width: 100%;
@@ -283,7 +297,6 @@ body{
     bottom: 84px;
 }
 .circle{
-    position: relative;
     border-radius: 100px;
     color: white;
     text-transform: uppercase;
@@ -327,7 +340,7 @@ body{
 }
 .scroll span {
     position: absolute;
-    top: 845px;
+    top: 805px;
     left: calc(50% - 26px);
     width: 49px;
     height: 49px;
@@ -352,7 +365,7 @@ body{
     /*!musthed*/
     /*features*/
 .features{
-    height: 556px;
+    height: 652px;
 }
 .features-ttl{
     padding-top: 128px;
@@ -382,16 +395,15 @@ body{
 .character img{
     padding-right: 20px;
 }
-.pbox{
-    width:  367px;
-}
+
 .parallax, .usability,.colors {
     display: flex;
     flex-direction: row;
 }
 /*!features*/
+
 .widgets{
-    height: 965px;
+    height: 100vh;
 }
 .title{
     color: #648cff;
@@ -400,27 +412,129 @@ body{
 }
 .widgets h3{
     padding-bottom: 19px;
-    padding-top: 96px;
     text-align: center;
 }
-.widgets p{
-    padding-bottom: 64px;
+#carousel img{
+    -webkit-box-shadow: 0px 20px 34px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 20px 34px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 20px 34px 3px rgba(0,0,0,0.3);
+    width: 370px;
+    height: 662px;
 }
-.widgets img{
+#prev, #next{
+    font-size: 220px;
+    top: 275px;
     position: relative;
-    left: 193px;
+}
+
+.carousel-wrap a span:hover{
+    color: rgba(146, 125, 255, 0.3);
+    font-weight: 300;}
+.carousel-wrap{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#carousel {
+    left: 8px;
+    top: -269px;
+    position: absolute !important;
+}
+#prev{
+    transform: rotate(-90deg);
+}
+#next{
+    transform: rotate(90deg);
+}
+.carousel-btn{
+    cursor: pointer;
+    color:  #c3cfe5;
+    border-radius: 100px;
+    font-size: 90px;
+}
+/*screenshots*/
+.clouds{
+    display: flex;
+    height: 100vh;
+    position: relative;
+}.rain{
+    display: flex;
+    height: 100vh;
+    position: relative;
+}.sun{
+    display: flex;
+    height: 100vh;
+    position: relative;
 }
 .vertical {
-    top: 457px;
-    position: relative;
+    top: 370px;
+    left: 37px;
+}.screenshots h3 {
+     padding-bottom: 20px;
+ }
+.back{
+    z-index: 0;
+    position: absolute;
     display: inline-block;
     transform: rotate(90deg);
     font-size: 257px;
     text-transform: capitalize;
     color: rgba(0,0,0,.05);
-    left: 42px;
+    left: 37px;
     letter-spacing: -15px;
 }
+.screnn-img{
+    padding-top: 286px;
+    padding-bottom: 41px;
+}
+.screen-phone-left{
+    position: absolute;
+    z-index: 1;
+    left: 87px;
+    top: 200px;
+}
+.screen-p{
+    width: 489px;
+    color: #353854;
+    font-size: 24px;
+    line-height: 36px;
 
-
+}
+.left{
+    width: 50%;
+    justify-content: start;
+}
+.right{position: relative;
+    width: 50%;
+justify-content: end;
+}
+.circle-screen{
+    z-index: 2;
+    height: 92px;
+    width: 92px;
+    border-radius: 100px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+.crcl-scrn-l{
+    font-size: 29px;
+    left: 17px;
+    top: 577px;
+}
+.crcl-scrn-r{
+    font-size: 18px;
+    left: 320px;
+    top: 369px;
+}
+.cld-crc-l{
+    background: #6ca3ff;
+}
+.cld-crc-r{
+    background: #fcec64;
+}
 /**!content**/
