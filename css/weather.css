@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,71 +86,102 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
-body {background-size: cover;
+
+body {
+    background-size: cover;
     line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
-body{
+
+body {
     min-width: 1170px;
     background-size: cover;
 }
-.wraper{
+
+.wraper {
     width: 1170px;
     margin: 0 auto;
 }
-.center{
+
+.center {
     text-align: center;
 }
-.strong{
+
+.strong {
     font-family: "Ubuntu Bold";
     font-weight: normal;
     font-style: normal;
 }
-.stronger{
+
+.stronger {
     font-family: "Ubuntu Bold";
     font-weight: normal;
     font-style: normal;
     text-transform: uppercase;
 }
-.light{
+
+.light {
     font-family: "Ubuntu Light";
     font-weight: normal;
     font-style: normal;
 }
-.regular{
+
+.regular {
     font-family: "Ubuntu Regular";
     font-weight: normal;
     font-style: normal;
 }
-.regular-fz-18{
+
+.regular-fz-18 {
     font-family: "Ubuntu Regular";
     font-weight: normal;
     font-style: normal;
@@ -90,66 +189,60 @@ body{
     text-align: center;
     color: #999;
 }
+
+
 /**fonts**/
+
 @font-face {
     font-family: 'Ubuntu Regular';
     src: url('../fonts/Ubuntu-Regular.eot');
-    src: url('../fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Ubuntu-Regular.woff') format('woff'),
-    url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    src: url('../fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu-Regular.woff') format('woff'), url('../fonts/Ubuntu-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: '../fonts/Ubuntu Light';
     src: url('../fonts/Ubuntu-Light.eot');
-    src: url('../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Ubuntu-Light.woff') format('woff'),
-    url('../fonts/Ubuntu-Light.ttf') format('truetype');
+    src: url('../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu-Light.woff') format('woff'), url('../fonts/Ubuntu-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Ubuntu Bold';
     src: url('../fonts/Ubuntu-Bold.eot');
-    src: url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Ubuntu-Bold.woff') format('woff'),
-    url('../fonts/Ubuntu-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?dw3444');
-    src:  url('../fonts/icomoon.eot?dw3444#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?dw3444') format('truetype'),
-    url('../fonts/icomoon.woff?dw3444') format('woff'),
-    url('../fonts/icomoon.svg?dw3444#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'icomoon';
-    src:  url('../icomoon/fonts/icomoon.eot?f77s5i');
-    src:  url('../icomoon/fonts/icomoon.eot?f77s5i#iefix') format('embedded-opentype'),
-    url('../icomoon/fonts/icomoon.ttf?f77s5i') format('truetype'),
-    url('../icomoon/fonts/icomoon.woff?f77s5i') format('woff'),
-    url('../icomoon/fonts/icomoon.svg?f77s5i#icomoon') format('svg');
+    src: url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu-Bold.woff') format('woff'), url('../fonts/Ubuntu-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?dw3444');
+    src: url('../fonts/icomoon.eot?dw3444#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?dw3444') format('truetype'), url('../fonts/icomoon.woff?dw3444') format('woff'), url('../fonts/icomoon.svg?dw3444#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-[class^="icon-"], [class*=" icon-"] {
+@font-face {
+    font-family: 'icomoon';
+    src: url('../icomoon/fonts/icomoon.eot?f77s5i');
+    src: url('../icomoon/fonts/icomoon.eot?f77s5i#iefix') format('embedded-opentype'), url('../icomoon/fonts/icomoon.ttf?f77s5i') format('truetype'), url('../icomoon/fonts/icomoon.woff?f77s5i') format('woff'), url('../icomoon/fonts/icomoon.svg?f77s5i#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: none;
+    speak-as: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -158,30 +251,40 @@ body{
 .icon-facebook:before {
     content: "\ea90";
 }
+
 .icon-facebook2:before {
     content: "\ea91";
 }
+
 .icon-instagram:before {
     content: "\ea92";
 }
+
 .icon-twitter:before {
     content: "\ea96";
 }
+
 .icon-appleinc:before {
     content: "\eabe";
 }
+
 .icon-ctrl:before {
     content: "\ea50";
 }
+
+
 /**!fonts**/
 
+
 /**header**/
+
 .header {
     z-index: 1;
     position: absolute;
     left: calc(50% - 600px);
 }
-.hat{
+
+.hat {
     line-height: 90px;
     justify-content: space-between;
     display: flex;
@@ -192,9 +295,11 @@ body{
     color: white;
     font-size: 24px;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
 }
+
 .menu a {
     color: #e1e1e1;
     font-size: 18px;
@@ -223,7 +328,7 @@ body{
     margin-right: 89px;
 }
 
-.icons li{
+.icons li {
     display: inline-block;
 }
 
@@ -232,10 +337,17 @@ body{
     font-size: 27px;
     margin-left: 33px;
 }
+
+
 /**!header**/
+
+
 /**content**/
-    /*!musthed*/
-.musthead{
+
+
+/*!musthed*/
+
+.musthead {
     background: url(../images/back-top.jpg) 50% 100% no-repeat;
     height: 100vh;
     top: 0;
@@ -243,21 +355,25 @@ body{
     width: 100%;
     padding-top: 288px;
     position: relative;
-
 }
-.musthead-in-left a:last-child:hover{
+
+.musthead-in-left a:last-child:hover {
     background: rgba(68, 102, 201, .8)
 }
-.musthead-in-left a:hover{
+
+.musthead-in-left a:hover {
     background: rgba(252, 106, 66, .9)
 }
-.musthead-in-left{
+
+.musthead-in-left {
     float: left;
 }
-.musthead-in-right{
+
+.musthead-in-right {
     float: right;
     display: flex;
 }
+
 .button {
     background: #fc6a42;
     padding: 0px 35px;
@@ -270,33 +386,38 @@ body{
     display: inline-block;
     color: white;
 }
-.musthead-in-left a:last-child{
+
+.musthead-in-left a:last-child {
     margin-left: 13px;
     padding: 0 40px;
     background: #4466c9;
 }
-.mil-h1{
+
+.mil-h1 {
     line-height: 72px;
     font-size: 60px;
     color: white;
     padding-bottom: 31px;
 }
-.mil-p{
+
+.mil-p {
     padding-bottom: 55px;
     color: #fff;
     line-height: 30px;
     font-size: 18px;
 }
+
 .musthead-in-right {
     display: flex;
 }
 
-.musthead-in-right img{
+.musthead-in-right img {
     position: relative;
     right: 194px;
     bottom: 84px;
 }
-.circle{
+
+.circle {
     border-radius: 100px;
     color: white;
     text-transform: uppercase;
@@ -306,14 +427,17 @@ body{
     flex-direction: column;
     position: relative;
 }
-.sunny{font-size: 18px;
+
+.sunny {
+    font-size: 18px;
     right: 29px;
     height: 90px;
     width: 90px;
     background: #fc6a42;
     top: 210px;
 }
-.london{
+
+.london {
     font-size: 16px;
     top: 184px;
     left: 342px;
@@ -321,6 +445,7 @@ body{
     height: 90px;
     width: 90px
 }
+
 .nine {
     font-size: 21px;
     background: white;
@@ -330,6 +455,7 @@ body{
     left: 171px;
     padding-left: 8px;
 }
+
 .rio {
     left: 248px;
     color: #648cff;
@@ -338,6 +464,7 @@ body{
     width: 56px;
     top: 491px;
 }
+
 .scroll span {
     position: absolute;
     top: 805px;
@@ -349,6 +476,7 @@ body{
     box-sizing: border-box;
     background: white;
 }
+
 .scroll span::after {
     position: absolute;
     top: 43%;
@@ -362,154 +490,195 @@ body{
     transform: rotate(-45deg);
     box-sizing: border-box;
 }
-    /*!musthed*/
-    /*features*/
-.features{
+
+
+/*!musthed*/
+
+
+/*features*/
+
+.features {
     height: 652px;
 }
-.features-ttl{
+
+.features-ttl {
     padding-top: 128px;
     padding-bottom: 25px;
     text-align: center;
 }
-.features-p{
 
+.features-p {
     padding-bottom: 130px;
-
 }
-.character{
+
+.character {
     display: flex;
     justify-content: space-between;
 }
+
 .character p {
     color: #aeaeae;
     padding-top: 18px;
     font-size: 16px;
     line-height: 31px;
 }
-.character h3{
+
+.character h3 {
     color: #353854;
     line-height: 20px;
     font-size: 24px;
 }
-.character img{
+
+.character img {
     padding-right: 20px;
 }
 
-.parallax, .usability,.colors {
+.parallax,
+.usability,
+.colors {
     display: flex;
     flex-direction: row;
 }
+
+
 /*!features*/
 
-.widgets{
+.widgets {
     height: 100vh;
 }
-.title{
+
+.title {
     color: #648cff;
     text-transform: uppercase;
     font-size: 36px;
 }
-.widgets h3{
+
+.widgets h3 {
     padding-bottom: 19px;
     text-align: center;
 }
-#carousel img{
-    -webkit-box-shadow: 0px 20px 34px 3px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 20px 34px 3px rgba(0,0,0,0.3);
-    box-shadow: 0px 20px 34px 3px rgba(0,0,0,0.3);
+
+#carousel img {
+    -webkit-box-shadow: 0px 20px 34px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 20px 34px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 20px 34px 3px rgba(0, 0, 0, 0.3);
     width: 370px;
     height: 662px;
 }
-#prev, #next{
+
+#prev,
+#next {
     font-size: 220px;
     top: 275px;
     position: relative;
 }
 
-.carousel-wrap a span:hover{
+.carousel-wrap a span:hover {
     color: rgba(146, 125, 255, 0.3);
-    font-weight: 300;}
-.carousel-wrap{
+    font-weight: 300;
+}
+
+.carousel-wrap {
     position: relative;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
+
 #carousel {
     left: 8px;
     top: -269px;
     position: absolute !important;
 }
-#prev{
+
+#prev {
     transform: rotate(-90deg);
 }
-#next{
+
+#next {
     transform: rotate(90deg);
 }
-.carousel-btn{
+
+.carousel-btn {
     cursor: pointer;
-    color:  #c3cfe5;
+    color: #c3cfe5;
     border-radius: 100px;
     font-size: 90px;
 }
+
+
 /*screenshots*/
-.clouds{
-    display: flex;
-    height: 100vh;
-    position: relative;
-}.rain{
-    display: flex;
-    height: 100vh;
-    position: relative;
-}.sun{
+
+.clouds {
     display: flex;
     height: 100vh;
     position: relative;
 }
+
+.rain {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.sun {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
 .vertical {
     top: 370px;
     left: 37px;
-}.screenshots h3 {
-     padding-bottom: 20px;
- }
-.back{
+}
+
+.screenshots h3 {
+    padding-bottom: 20px;
+}
+
+.back {
     z-index: 0;
     position: absolute;
     display: inline-block;
     transform: rotate(90deg);
     font-size: 257px;
     text-transform: capitalize;
-    color: rgba(0,0,0,.05);
+    color: rgba(0, 0, 0, .05);
     left: 37px;
     letter-spacing: -15px;
 }
-.screnn-img{
+
+.screnn-img {
     padding-top: 286px;
     padding-bottom: 41px;
 }
-.screen-phone-left{
+
+.screen-phone-left {
     position: absolute;
     z-index: 1;
     left: 87px;
     top: 200px;
 }
-.screen-p{
+
+.screen-p {
     width: 489px;
     color: #353854;
     font-size: 24px;
     line-height: 36px;
-
 }
-.left{
+
+.left {
     width: 50%;
     justify-content: start;
 }
-.right{position: relative;
+
+.right {
+    position: relative;
     width: 50%;
-justify-content: end;
+    justify-content: end;
 }
-.circle-screen{
+
+.circle-screen {
     z-index: 2;
     height: 92px;
     width: 92px;
@@ -521,20 +690,36 @@ justify-content: end;
     flex-direction: column;
     position: absolute;
 }
-.crcl-scrn-l{
+
+.crcl-scrn-l {
     font-size: 29px;
     left: 17px;
     top: 577px;
 }
-.crcl-scrn-r{
+
+.crcl-scrn-r {
     font-size: 18px;
     left: 320px;
     top: 369px;
 }
-.cld-crc-l{
+
+.cld-crc-l {
     background: #6ca3ff;
 }
-.cld-crc-r{
+
+.cld-crc-r {
     background: #fcec64;
 }
+
+.back-sun {
+    left: 83px;
+    top: 347px;
+}
+
+.back-rain {
+    left: 142px;
+    top: 371px;
+}
+
+
 /**!content**/
