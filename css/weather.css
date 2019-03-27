@@ -721,5 +721,62 @@ body {
     top: 371px;
 }
 
+.reviews {
+    height: 100vh;
+}
+
+.reviews h3 {
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.coment {
+    display: flex;
+    justify-content: space-between
+}
+
+.coment div {
+    width: 549px;
+}
+
+.coments span {
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.coments {
+    padding-bottom: 140px;
+    position: relative;
+    display: inline-block;
+    color: #353854;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.coments::before {
+    left: -5px;
+}
+
+.coments::after,
+.coments::before {
+    position: absolute;
+    content: '“';
+    color: #648cff;
+    font-family: Ubuntu;
+    font-size: 142px;
+    font-weight: 400;
+}
+
+.coments::after {
+    right: 0px;
+    transform: rotate(180deg)
+}
+
+.reviews .paragraph {
+    padding-bottom: 200px;
+}
+
 
 /**!content**/
